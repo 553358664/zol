@@ -1,0 +1,38 @@
+[
+	{
+		"id" : "shop01",
+		"uname" : "荣耀8X 64GB",
+		"src" : "ware1.jpg",
+		"price" : "￥1459"
+	},
+	{
+		"id" : "shop02",
+		"uname" : "苹果AirPods",
+		"src" : "ware2.jpg",
+		"price" : "￥1088"
+	},
+	{
+		"id" : "shop03",
+		"uname" : "华硕(ASUS)",
+		"src" : "ware3.jpg",
+		"price" : "￥--"
+	},
+	{
+		"id" : "shop04",
+		"uname" : "荣耀畅网 7c 64GB",
+		"src" : "ware4.jpg",
+		"price" : "￥799"
+	},
+	{
+		"id" : "shop05",
+		"uname" : "ASUS 华硕顽石热血",
+		"src" : "ware5.jpg",
+		"price" : "￥999"
+	},
+	{
+		"id" : "shop06",
+		"uname" : "15.6英寸影音娱乐本",
+		"src" : "ware6.jpg",
+		"price" : "￥999"
+	}
+]

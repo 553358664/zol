@@ -1,0 +1,20 @@
+[	
+	{
+		"id" : "ware01",
+		"uname" : "华为 nova3i 128GB",
+		"src" : "ware-right1.jpg",
+		"price" : "￥2299"
+	},
+	{
+		"id" : "ware02",
+		"uname" : "华为 Nova 3 128GB",
+		"src" : "ware-right2.jpg",
+		"price" : "￥2599"
+	},
+	{
+		"id" : "ware03",
+		"uname" : "华为 nova 3 128GB",
+		"src" : "ware3.jpg",
+		"price" : "￥1599"
+	}
+]
