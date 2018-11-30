@@ -11,14 +11,15 @@ li{
 .right{
 	float:right
 }
-a{
-	text-decoration: none;
+img{
+	vertical-align: middle;
 }
 html,body{
 	height:100%;
 	position:relative;
 }
 a{
+	text-decoration: none;
 	font-size:14px;
 	color:black;
 	}
@@ -384,8 +385,7 @@ header
 		margin:0 auto;
 		.section2-body{
 			height:102px;
-			width:100%;
-			
+			width:100%;			
 			position:absolute;
 			bottom:0;
 			.coupon-list{
@@ -470,7 +470,6 @@ header
 		.noopsyche-top{
 			width:1160px;
 			height:235px;
-			background:blue;
 			position:relative;
 			.noop-right{
 				position:absolute;
@@ -488,7 +487,6 @@ header
 				.noopsuche-top-show-u{
 					width:101px;
 					height:235px;
-					background:pink;
 					float:left;
 					li{
 						width:101px;
@@ -496,7 +494,8 @@ header
 						border-top:1px solid #ccc;
 						margin-top:-1px;
 						text-align:center;
-						line-height:46px;						
+						line-height:46px;	
+						background:#ccc;					
 					}
 					.all1{
 						background:#ce1a1b;
@@ -544,7 +543,69 @@ header
 				}
 			}		
 		}
+		.noopsyche-banner{
+			img{
+				display:block;
+			}
+		}
 	}
+}
+.section-4{
+	width:1200px;
+	height:386px;
+	padding-top:34px;
+	background:blue;
+	margin:0 auto;
+	.section4-header{
+		width:1160px;
+		height:36px;
+		background:red;
+		padding-left:40px;
+		margin-bottom:10px;
+	}
+	.section4-body{
+		width:1200px;
+		height: 340px;
+		background: #4d4d4d;
+		.section4-body-u{
+			width: 1212px;
+			height:240px;
+			margin-left:-12px;
+			li{
+				float:left;
+				width:200px;
+				height:300px;
+				margin-left:12px;
+				padding:20px 15px;
+				.s4-items{
+					text-align:center;
+					width:200px;
+					height:30px;
+					line-height:30px;
+				}				
+				a{		display:block;
+						margin-bottom:22px;	
+						width:200px;
+						height:200px;				
+					img{
+						width:200x;
+						height:200px;
+						text-align:center;
+					}
+				}			
+			}
+			.section4-body-list{
+				width:230px;
+				height:340px;
+				padding:0;
+				img{
+					width:230px;
+					height:340px;
+				}
+				
+			}
+		}
+	}	
 }
 #rightNav{
 	position:fixed;
@@ -553,4 +614,137 @@ header
 	width:37px;
 	height:100%;
 	background:black;
+}
+footer{
+	width:1263px;
+	height:465px;
+	border-top:1px solid #ccc;
+	margin-top:30px;
+	background:#d9d9d9;
+	.footer-header{
+		width:1200px;
+		height:291px;
+		margin:0 auto;
+		.footer-header-u{
+			width:1200px;
+			height:50px;
+			padding:30px 0 ;
+			li{
+				float:left;
+				width:200px;
+				height:50px;
+				a{display:block;
+					width:140px;
+					height:50px;
+					padding-left:60px;
+					.top{
+						width:140px;
+						height:28px;
+					}
+					.blow{
+						width:140PX;
+						height:22px;
+					}
+				}
+			}
+		}
+		.footerH-show{
+			width:1200px;
+			height:140px;
+			padding:30px 0 ;
+			dl{
+				width:175px;
+				height:122px;
+				float:left;
+				dd{
+					width:175px;
+					height:28px;
+					font-size:12px;
+				}
+				dt{
+					width:175px;
+					height:28px;
+				}
+			}
+			.coopertion{
+				width:145px;
+				height:116px;
+				padding-left:60px;
+				float:right;
+			}
+			.cooperter{
+				width:210px;
+				height:56px;
+				padding-left:60px;
+				float:right;
+
+			}
+		}
+	}
+	.footer-body{
+		width:1263px;
+		height:119px;
+		background:#000;
+		padding-top:25px;
+		padding-bottom:30px;
+		.footerBshow{
+			position: relative;
+			width:1200px;
+			height:119px;
+			margin:0 auto;
+			a{
+				margin:0 10px;
+			}
+			.footerHtop{
+				width:1210px;
+				height:24px;
+				padding-top:7px;
+				margin-left:-10px;
+				a{
+					color:#fff;
+				}
+				
+			}
+			.footerHmid{
+				width:1210px;
+				height:24px;
+				margin-left:-10px;
+				padding-top:20px;
+				span{
+					color:#999;
+				}
+				a{
+					color:#999;
+				}
+			}
+			.footerHright{
+				width:280PX;
+				height:100px;
+				position:absolute;
+				top: 0;
+				left:920px;
+				a{
+					font-size:12px;
+					color:#999;
+				}
+				.wetch{
+					width:100px;
+					height:100px;
+					padding-left:34px;
+					float:right;
+					img{
+						width:100px;
+						height:100px;
+					}
+				}
+				.weibo{
+					display:block;
+					width:72px;
+					height:21px;
+					padding-left:34px;
+					margin-right:40px;
+				}
+			}
+		}
+	}
 }

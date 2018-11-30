@@ -148,9 +148,10 @@ function section(){
 }
 function noopsuche(){
 	$(".noopsuche-top-show-u").on("mouseenter","li",function(){
-		$(this).css("background","#ce1a1b")
+		$(this).css("background","#ce1a1b").siblings().css("background","#ccc")
 		$(".noopsuche-top-u li").eq($(this).index()).css("display","block").siblings().css("display","none")
 	}).on("mouseleave","li",function(){
+		$(this).css("background","#ccc")
 		$(this).css("background","#ececec")
 		$(".noopsuche-top-u")
 	})
@@ -160,3 +161,37 @@ function noopsuche(){
 		$(this).stop().animate({"width":210},300)
 	})
 }
+function sectionfour(){
+	var index = 1;//页码
+	var pageNum = 4;//每页的数据量
+	$.ajax({
+		type:"get",
+		url:"sectionf.json",
+		async:true,
+		success : function(arr){
+			showData(arr,index);
+		}
+	});
+	function showData(arr,index){
+		var conStr = "";
+		conStr += `<li class= "section4-body-list">
+						<a href=""><img src="https://mercrt-fd.zol-img.com.cn/g5/M00/09/09/ChMkJ1s_IL6IAAn1AABfITG9iuYAApg0AGcn3kAAF85555.jpg" alt=""></a>
+					</li>`
+		for( var i = (index-1)*pageNum ; i < index*pageNum ; i++ ){
+			var pro = arr[i];
+				conStr += `<li>
+							<a href="page.html?pid=${pro.id}"><img src="${pro.src}" alt=""></a>
+							<p class= "s4-items"><a href="">${pro.uname}</a></p>
+							<p class= "s4-items">RMB<span>${pro.price}</span></p>
+							</li>`
+		}
+		
+		$(".section4-body-u").html( conStr );
+	}
+	$(".section4-body-u").on("mouseenter","img",function(){
+		$(this).not(".section4-body-list img").stop().animate({"width":215,"height":215},200)
+	}).on("mouseleave","img",function(){
+		$(this).not(".section4-body-list img").stop().animate({"width":200,"height":200},200)
+	})
+}
+
