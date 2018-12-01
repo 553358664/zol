@@ -46,7 +46,7 @@ function ware(){
 	var pageNum = 6;//每页的数据量
 	$.ajax({
 		type:"get",
-		url:"index.json",
+		url:"json/index.json",
 		async:true,
 		success : function(arr){
 			showData(arr,index);
@@ -81,7 +81,7 @@ function wareRight(){
 	var pageNum = 3;//每页的数据量
 	$.ajax({
 		type:"get",
-		url:"ware.json",
+		url:"json/ware.json",
 		async:true,
 		success : function(arr){
 			showData(arr,index);
@@ -115,7 +115,7 @@ function section(){
 	var pageNum = 5;//每页的数据量
 	$.ajax({
 		type:"get",
-		url:"section.json",
+		url:"json/section.json",
 		async:true,
 		success : function(arr){
 			showData(arr,index);
@@ -150,10 +150,6 @@ function noopsuche(){
 	$(".noopsuche-top-show-u").on("mouseenter","li",function(){
 		$(this).css("background","#ce1a1b").siblings().css("background","#ccc")
 		$(".noopsuche-top-u li").eq($(this).index()).css("display","block").siblings().css("display","none")
-	}).on("mouseleave","li",function(){
-		$(this).css("background","#ccc")
-		$(this).css("background","#ececec")
-		$(".noopsuche-top-u")
 	})
 	$(".noop-right").on("mouseenter","img",function(){
 		$(this).stop().animate({"width":214},300)
@@ -166,7 +162,7 @@ function sectionfour(){
 	var pageNum = 4;//每页的数据量
 	$.ajax({
 		type:"get",
-		url:"sectionf.json",
+		url:"json/sectionf.json",
 		async:true,
 		success : function(arr){
 			showData(arr,index);
@@ -184,8 +180,7 @@ function sectionfour(){
 							<p class= "s4-items"><a href="">${pro.uname}</a></p>
 							<p class= "s4-items">RMB<span>${pro.price}</span></p>
 							</li>`
-		}
-		
+		}		
 		$(".section4-body-u").html( conStr );
 	}
 	$(".section4-body-u").on("mouseenter","img",function(){

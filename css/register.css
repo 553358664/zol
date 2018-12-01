@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 50px 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+
+header {
+  width: 990px;
+  height: 94px;
+  margin: 0 auto;
+}
+header .head-all {
+  width: 990px;
+  height: 60px;
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+header .head-all .right-bar {
+  padding-top: 21px;
+  height: 22px;
+  line-height: 22px;
+  float: right;
+  font-size: 12px;
+}
+header .head-all .right-bar a {
+  width: 56px;
+  height: 16px;
+  line-height: 16px;
+  color: #c00;
+  padding: 3px 10px;
+  font-size: 12px;
+  float: right;
+}
+header .head-all .left-logo {
+  width: 303px;
+  height: 60px;
+  float: left;
+}
+header .head-all .left-logo img {
+  float: left;
+}
+header .head-all .left-logo .left-log-p {
+  margin-top: 8px;
+  margin-left: 8px;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 10px;
+  line-height: 44px;
+  width: 154px;
+  height: 44px;
+  font-size: 14px;
+  float: left;
+  font-family: "simsun";
+}
+
+.register-wrap {
+  width: 980px;
+  height: 666px;
+  border: 1px solid #e6e6e6;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.register-wrap .register-wrap-top {
+  width: 890px;
+  height: 28px;
+  padding: 16px 90px;
+  padding-right: 0;
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  background: #fafafa;
+}
+.register-wrap .form-all {
+  width: 500px;
+  height: 576px;
+  padding-top: 30px;
+  padding-left: 89px;
+  background: red;
+}
+
+/*# sourceMappingURL=register.css.map */
