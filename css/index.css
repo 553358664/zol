@@ -76,14 +76,91 @@ header li {
   line-height: 29px;
 }
 
-header
-#rightNav {
+.search-fixed {
+  width: 100%;
+  height: 36px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed;
   position: fixed;
-  right: 0;
   top: 0;
-  width: 39px;
-  height: 689px;
-  background-color: green;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  display: none;
+}
+.search-fixed .search-fixed-all {
+  width: 1200px;
+  height: 36px;
+  margin: 0 auto;
+}
+.search-fixed .search-fixed-all .logo {
+  width: 78px;
+  height: 36px;
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/logo_fixed1.png) no-repeat;
+}
+.search-fixed .search-fixed-all .logo a {
+  display: block;
+  width: 78px;
+  height: 36px;
+}
+.search-fixed .search-fixed-all .city-location {
+  width: 28px;
+  height: 26px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding-left: 12px;
+  padding-right: 26px;
+}
+.search-fixed .search-fixed-all .city-location .city-name {
+  width: 28px;
+  height: 26px;
+  font-size: 12px;
+}
+.search-fixed .search-fixed-all .quick-entry {
+  width: 307px;
+  height: 36px;
+  padding-top: 7px;
+  margin-left: 65px;
+}
+.search-fixed .search-fixed-all .quick-entry a {
+  margin-left: 20px;
+  float: right;
+  text-align: center;
+}
+.search-fixed .search-fixed-all .quick-entry .order {
+  width: 84x;
+  height: 36px;
+}
+.search-fixed .search-fixed-all .quick-entry .coupon {
+  width: 97px;
+  height: 36px;
+}
+.search-fixed .search-fixed-all .quick-entry .car {
+  width: 66px;
+  height: 36px;
+}
+.search-fixed .search-fixed-all .search-box {
+  position: relative;
+  width: 536px;
+  height: 32px;
+  border: 2px solid #ec3639;
+}
+.search-fixed .search-fixed-all .search-box .search-text {
+  display: inline-block;
+  width: 441px;
+  height: 20px;
+  padding: 6px 10px;
+  border: none;
+}
+.search-fixed .search-fixed-all .search-box .search-btn {
+  width: 75px;
+  height: 32px;
+  border: none;
+  background: #ec3639;
+  position: absolute;
+  top: 0;
+  left: 461px;
 }
 
 .top {
@@ -92,6 +169,7 @@ header
 }
 .top .topShow {
   width: 94%;
+  height: 100%;
   margin: 0 auto;
 }
 .top .topShow .city-location {
@@ -423,16 +501,35 @@ header
   height: 36px;
   margin-bottom: 10px;
   padding-left: 36px;
-  background: pink;
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/zol-home-icons.png) no-repeat;
+  background-position: -138px -345px;
+}
+.section3 .section-header h3 {
+  display: block;
+  width: 72px;
+  height: 36px;
+  margin-right: 10px;
+  float: left;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+}
+.section3 .section-header .sec-header-tip {
+  float: left;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #999;
 }
 .section3 .section-body {
   width: 100%;
   height: 559px;
-  background: yellow;
 }
-.section3 .section-body .section-img img {
-  width: 392px;
+.section3 .section-body .section-img li {
+  margin: 0 1px;
+  width: 398px;
   height: 200px;
+  float: left;
 }
 .section3 .section-body .section-body-u {
   width: 100%;
@@ -442,22 +539,67 @@ header
   width: 200px;
   height: 315px;
   float: left;
-  padding: 18px;
+  padding: 20px;
   padding-bottom: 24px;
 }
-.section3 .section-body .section-body-u .section-body-pic img {
+.section3 .section-body .section-body-u .section-body-list .section-body-name {
+  font-size: 14px;
+  color: #333;
+}
+.section3 .section-body .section-body-u .section-body-list .section-body-show {
+  font-size: 14px;
+  color: #999;
+}
+.section3 .section-body .section-body-u .section-body-list .section-body-pic {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.section3 .section-body .section-body-u .section-body-list .section-body-pic img {
   width: 200px;
   height: 200px;
 }
-.section3 .section-body .section-body-u .sct-prs {
+.section3 .section-body .section-body-u .section-body-list .sct-d-prs {
+  margin-bottom: 5px;
+  height: 32px;
+  line-height: 32px;
+}
+.section3 .section-body .section-body-u .section-body-list .sct-d-prs .sct-prs {
   float: left;
+  font-size: 18px;
+  color: #f33;
+}
+.section3 .section-body .section-body-u .section-body-list .sct-d-prs .sct-cankao {
+  float: right;
+  color: #f33;
+  font-size: 12px;
+}
+.section3 .section-body .section-body-u .section-body-list .sct-d-prs .sct-cankao span {
+  color: #999;
+}
+.section3 .section-body .section-body-u .section-body-list .sct-pingjia {
+  height: 24px;
+}
+.section3 .section-body .section-body-u .section-body-list .sct-pingjia a {
+  display: inline-block;
+  widtH: 48px;
+  height: 22px;
+  padding: 0 6px;
+  border: 1px solid #f33;
+  font-size: 12px;
+  float: left;
+  border-radius: 3px;
+  color: #f33;
+  line-height: 22px;
+  margin-left: 4px;
 }
 
 .noopsyche-box {
   width: 1200px;
   height: 745px;
-  background: green;
   margin: 0 auto;
+  padding-top: 34px;
 }
 .noopsyche-box .noopsyche-box-header {
   width: 1161px;
@@ -465,12 +607,19 @@ header
   padding-left: 39px;
   margin-bottom: 10px;
   background: pink;
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/zol-home-icons.png) no-repeat;
+  background-position: -138px -345px;
+}
+.noopsyche-box .noopsyche-box-header h3 {
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  font-weight: 400;
 }
 .noopsyche-box .noopsyche-box-body {
   width: 1160px;
   height: 658px;
   padding: 20px;
-  background: red;
 }
 .noopsyche-box .noopsyche-box-body .noopsyche-top {
   width: 1160px;
@@ -519,14 +668,91 @@ header
   top: 0;
   left: 101px;
 }
+.noopsyche-box .noopsyche-box-body .noopsyche-top .noop-right {
+  width: 428px;
+  height: 235px;
+}
+.noopsyche-box .noopsyche-box-body .noopsyche-top .noop-right a {
+  display: block;
+  float: left;
+  width: 214px;
+  height: 235px;
+  overflow: hidden;
+}
+.noopsyche-box .noopsyche-box-body .noopsyche-top .noop-right a img {
+  width: 214px;
+  height: 235px;
+}
 .noopsyche-box .noopsyche-box-body .clearfix {
   position: relative;
 }
 .noopsyche-box .noopsyche-box-body .clearfix ul li {
-  width: 183px;
-  height: 180px;
+  width: 182px;
+  height: 182px;
   float: left;
   margin-right: 1px;
+  position: relative;
+  overflow: hidden;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li img {
+  width: 180px;
+  height: 180px;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark {
+  width: 182px;
+  height: 176px;
+  padding: 3px 0;
+  position: absolute;
+  top: 152px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-name {
+  width: 182px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-price {
+  height: 24px;
+  color: #fff;
+  text-align: center;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-btn {
+  width: 84px;
+  height: 30px;
+  margin: 3px 49px 13px 49px;
+  background: #ce1a1b;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-btn a {
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  display: block;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-else {
+  width: 182px;
+  height: 18px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-else a {
+  display: inline-block;
+  width: 18%;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+.noopsyche-box .noopsyche-box-body .clearfix ul li .clearfix-mark .clearfix-mark-cankao {
+  width: 182px;
+  height: 18px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
 }
 .noopsyche-box .noopsyche-box-body .clearfix ul .learfix-list1 {
   width: 182px;
@@ -541,7 +767,13 @@ header
   width: 428px;
   height: 182px;
 }
-.noopsyche-box .noopsyche-box-body .clearfix .clearfix-right img {
+.noopsyche-box .noopsyche-box-body .clearfix .clearfix-right a {
+  display: block;
+  widows: 428px;
+  height: 182px;
+  overflow: hidden;
+}
+.noopsyche-box .noopsyche-box-body .clearfix .clearfix-right a img {
   width: 428px;
   height: 182px;
   margin-top: -2px;
@@ -554,20 +786,33 @@ header
   width: 1200px;
   height: 386px;
   padding-top: 34px;
-  background: blue;
   margin: 0 auto;
 }
 .section-4 .section4-header {
   width: 1160px;
   height: 36px;
-  background: red;
   padding-left: 40px;
   margin-bottom: 10px;
+}
+.section-4 .section4-header h3 {
+  width: 96px;
+  height: 36px;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.section-4 .section4-header .sec-header-tip {
+  float: left;
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: #999;
 }
 .section-4 .section4-body {
   width: 1200px;
   height: 340px;
-  background: #4d4d4d;
 }
 .section-4 .section4-body .section4-body-u {
   width: 1212px;
@@ -614,7 +859,49 @@ header
   right: 0;
   width: 37px;
   height: 100%;
-  background: black;
+  background: #2d2d2d;
+  z-index: 10;
+}
+#rightNav .right-box {
+  width: 37px;
+  height: 266px;
+  margin-top: -250px;
+  position: absolute;
+  top: 50%;
+}
+#rightNav .right-box div {
+  width: 37px;
+  height: 37px;
+  margin-bottom: 12px;
+}
+#rightNav .right-box .zc-number-f {
+  position: relative;
+}
+#rightNav .right-box .icon1 {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+}
+#rightNav .right-box .icon2 {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+  background-position: 0 -74px;
+}
+#rightNav .right-box .icon3 {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+  background-position: 0 -111px;
+}
+#rightNav .right-box .zc-number {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  padding: 1px 4px 0;
+  height: 13px;
+  font: 12px/13px Arial;
+  background: #f33;
+  color: #fff;
+  border-radius: 10px;
+}
+#rightNav .right-box .icon4 {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+  background-position: 0 -693px;
 }
 
 footer {
@@ -653,6 +940,29 @@ footer .footer-header .footer-header-u li a .blow {
   width: 140PX;
   height: 22px;
 }
+footer .footer-header .footer-header-u li:first-child {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+}
+footer .footer-header .footer-header-u li:nth-child(2) {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+  background-position: left -52px;
+}
+footer .footer-header .footer-header-u li:nth-child(3) {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+  background-position: left -104px;
+}
+footer .footer-header .footer-header-u li:nth-child(4) {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+  background-position: left -156px;
+}
+footer .footer-header .footer-header-u li:nth-child(5) {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+  background-position: left -208px;
+}
+footer .footer-header .footer-header-u li:nth-child(6) {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/service-bg.png) no-repeat;
+  background-position: left -260px;
+}
 footer .footer-header .footerH-show {
   width: 1200px;
   height: 140px;
@@ -687,7 +997,7 @@ footer .footer-header .footerH-show .cooperter {
 footer .footer-body {
   width: 1263px;
   height: 119px;
-  background: #000;
+  background: #2d2d2d;
   padding-top: 25px;
   padding-bottom: 30px;
 }
@@ -737,12 +1047,15 @@ footer .footer-body .footerBshow .footerHright .wetch {
   height: 100px;
   padding-left: 34px;
   float: right;
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/icon.png) no-repeat;
+  background-position: 0 -22px;
 }
 footer .footer-body .footerBshow .footerHright .wetch img {
   width: 100px;
   height: 100px;
 }
 footer .footer-body .footerBshow .footerHright .weibo {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/index/icon.png) no-repeat;
   display: block;
   width: 72px;
   height: 21px;

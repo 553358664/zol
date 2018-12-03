@@ -19,8 +19,7 @@ img {
   vertical-align: middle;
 }
 
-html, body {
-  height: 100%;
+body {
   position: relative;
 }
 
@@ -100,11 +99,157 @@ header .head-all .left-logo .left-log-p {
   background: #fafafa;
 }
 .register-wrap .form-all {
+  float: left;
   width: 500px;
   height: 576px;
   padding-top: 30px;
   padding-left: 89px;
-  background: red;
+}
+.register-wrap .form-all .form-all-u {
+  width: 500px;
+  height: 39px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.register-wrap .form-all .form-all-u .form-all-list {
+  width: 250px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-bottom: 0 none;
+  border-top: 2px solid #e02d2d;
+  padding-bottom: 2px;
+  margin: -1px;
+  margin-top: 0;
+  text-align: center;
+}
+.register-wrap .form-all .form-all-u .form-all-list span {
+  display: inline-block;
+  width: 108px;
+  height: 36px;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #c00;
+  line-height: 36px;
+}
+.register-wrap .form-all .form-body {
+  width: 500px;
+  height: 506px;
+  padding-top: 30px;
+}
+.register-wrap .form-all .form-body .register-form {
+  width: 417px;
+  height: 40px;
+  padding-left: 83px;
+  margin-bottom: 43px;
+  position: relative;
+}
+.register-wrap .form-all .form-body .register-form .span1 {
+  width: 83px;
+  height: 41px;
+  display: block;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: 14px/40px "Arial";
+}
+.register-wrap .form-all .form-body .register-form .span1 .span2 {
+  padding-right: 7px;
+}
+.register-wrap .form-all .form-body .register-form input {
+  width: 278px;
+  height: 22px;
+  border: 1px solid #ccc;
+  padding: 8px 5px;
+  margin-right: 10px;
+}
+.register-wrap .form-all .form-body .agreement {
+  width: 417px;
+  height: 32px;
+  padding-left: 83px;
+}
+.register-wrap .form-all .form-body #btn {
+  width: 290px;
+  height: 40px;
+  margin-left: 83px;
+  margin-top: 40px;
+  border: 0;
+  background: #c00;
+  font: bold 14px/40px "Arial";
+  color: white;
+}
+.register-wrap .first-login {
+  width: 170px;
+  height: 297px;
+  padding-left: 25px;
+  padding-right: 80px;
+  border-left: 1px solid #ccc;
+  margin-top: 30px;
+  float: right;
+}
+.register-wrap .first-login p {
+  width: 170px;
+  height: 48px;
+  margin-top: -6px;
+  font: 12px/24px "Arial";
+  color: #666;
+  text-align: center;
+}
+.register-wrap .first-login p a {
+  font-size: 12px;
+  color: #134ba0;
+}
+.register-wrap .first-login .first-login-list {
+  width: 170px;
+  height: 240px;
+}
+.register-wrap .first-login .first-login-list a {
+  display: block;
+  width: 170px;
+  height: 36px;
+  margin-top: 15px;
+  background: green;
+  text-indent: -9999px;
+}
+.register-wrap .first-login .first-login-list .weixin {
+  background: url("http://icon.zol-img.com.cn/newshop/login/weixin.png") no-repeat;
+}
+.register-wrap .first-login .first-login-list .sine {
+  background: url(https://login.zol.com/image/login-bg.png) no-repeat;
+}
+.register-wrap .first-login .first-login-list .qq {
+  background: url(https://login.zol.com/image/login-bg.png) no-repeat 0 -37px;
+}
+.register-wrap .first-login .first-login-list .zhifu {
+  background: url(https://login.zol.com/image/login-bg.png) no-repeat 0 -74px;
+}
+
+footer {
+  width: 1263px;
+  height: 18px;
+  padding-top: 12px;
+  padding-bottom: 25px;
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
+}
+footer .footer-wrap {
+  width: 900px;
+  height: 18px;
+  margin: 0 auto;
+}
+footer .footer-wrap .about {
+  float: left;
+}
+footer .footer-wrap .about a {
+  display: block;
+  margin: 0 10px;
+  height: 18px;
+  line-height: 18px;
+  float: left;
+  font: 12px/1.5 Arial;
+}
+footer .footer-wrap .copyright {
+  float: right;
+  font: 12px/1.5 Arial;
 }
 
 /*# sourceMappingURL=register.css.map */

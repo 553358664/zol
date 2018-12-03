@@ -1,0 +1,247 @@
+*{
+	margin: 0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+.left{
+	float:left
+}
+.right{
+	float:right
+}
+img{
+	vertical-align: middle;
+}
+html,body{
+	height:100%;
+	position:relative;
+}
+a{
+	text-decoration: none;
+	font-size:14px;
+	color:black;
+	}
+header{
+	height:29;
+	background: #f5f5f5;
+	border-top:1px solid #ccc;
+	.headerShow{
+		width:1200px;
+		height:29px;
+		margin: 0 auto;
+		background: #f5f5f5;
+		position:relative;
+		.header-qrcord{
+			position:absolute;
+			top:29px;
+			left:855px;
+			display:none;
+		}
+		.headerLeft li{
+			margin-right:22px;
+		}
+		.headerMid{
+			margin-left:153px;
+			li{
+				margin-right:20px
+			}
+		}
+		.headerRig img{
+			vertical-align: middle;
+		}
+		.headerRig li{
+			margin-left:20px;
+		}
+		i{
+			font-size:10px
+		}
+	}
+	a:hover{
+		text-decoration:underline
+	}
+
+}
+header li{
+	font-size:12px;
+	float:left;
+	line-height:29px;
+}
+#rightNav{
+	position:fixed;
+	top:0;
+	right:0;
+	width:37px;
+	height:100%;
+	background:#2d2d2d;
+	z-index:10;
+	.right-box{
+		width:37px;
+		height:266px;
+		margin-top:-250px;
+		position:absolute;
+		top:50%;
+		div{
+			width:37px;
+			height:37px;
+			margin-bottom:12px;
+		}
+		.zc-number-f{
+			position: relative;
+		}
+		.icon1{
+			background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+		}
+		.icon2{
+			background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+			background-position: 0 -74px;
+		}
+		.icon3{
+			background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+			background-position: 0 -111px;
+		}
+		.zc-number{
+			position: absolute;
+   			top: 4px;
+    		right: 3px;
+    		padding: 1px 4px 0;
+			height: 13px;
+   			font: 12px/13px Arial;
+    		background: #f33;
+			color: #fff;
+			border-radius: 10px;
+		}
+		.icon4{
+			background: url(http://icon.zol-img.com.cn/newshop/shop/MarketingTool/setcoupon/bar_ico.png) no-repeat;
+			background-position: 0 -693px;
+		}
+	}
+}
+.top{
+	height:60px;
+	padding:30px 0 ;
+	.topShow{
+		width:94%;
+		height:100%;
+		margin:0 auto;
+		.city-location{
+			width:28px;
+			height:26px;
+			border:1px solid #ccc;
+			margin-top:10px;
+			margin-left:20px;
+			padding-left:12px;
+			padding-right:26px;
+			.city-name{
+				width:28px;
+				height:26px;
+				font-size:12px
+			}
+		}
+		.quick-entry{
+			width:307px;
+			height:36px;
+			padding-top:7px;
+			margin-left:65px;
+			a{
+				margin-left:20px;
+				float:right;
+				text-align:center;
+			}
+			.order{
+			
+				width:84x;
+				height:36px;
+			}
+			.coupon{
+				
+				width:97px;
+				height:36px;
+			}
+			.car{
+				width:66px;
+				height:36px;
+			}
+		}
+		.search-box{
+			position:relative;
+			width:536px;
+			height:32px;
+			border:2px solid #ec3639;
+			margin-top:7px;
+			.search-text{
+			    display:inline-block;
+				width:441px;
+				height:20px;
+				padding:6px 10px;
+				border:none;
+			}
+			.search-btn{
+				width:75px;
+				height:32px;
+				border:none;
+				background:#ec3639;
+				position:absolute;
+				top:0;
+				left:461px;
+			}
+		}
+	}
+}
+.navMid{
+	height:39px;
+	background:#f5f5f5;
+	.navShow{
+		width:1200px;
+		height:39px;
+		margin:0 auto;
+		
+		.category-body{
+			position:relative;
+			height:39px;
+			width:160px;
+			.nav-header{
+				position:absolute;
+				left:180px;
+				width:1020px;
+				height:39px;			
+				li{
+					float:left;
+					width:56px;
+					height:39px;
+					padding-right:30px;
+					a{  display:block;
+						width:92px;
+						height:39px;
+						padding:0 10px;
+						font-size:18px;
+						line-height:36px;
+					}
+					a:hover{
+						color:red;
+						text-decoration:underline;
+					}
+				}
+			}
+			.category-nav{
+				position:relative;
+				width:108px;
+				height:39px;
+				background:#ec3639;
+				padding-left:52px;
+				i{
+					position:absolute;
+					top:14px;
+					left:26px;
+					color:white;
+				}
+				.category-text{
+					text-align:center;
+					line-height:39px;
+					color:white;
+				}			
+			}		
+		}		
+	}
+}
