@@ -12,7 +12,7 @@
     <header>
         <div class = "headerShow">
             <ul class = "headerLeft left">
-                <li><a href="">商城首页</a></li>
+                <li><a href="../index.html">商城首页</a></li>
                 <li>Hi~黄欢迎来到Z商城，请<a href="">登录</a></li>
                 <li> <a href="">注册</a></li>
             </ul>
@@ -73,16 +73,130 @@
                 <ul class= "nav-header">
                     <li><a href="">首页</a></li>
                     <li><a href="">团购</a></li>
-                    <li width="92"><a href="">电子竞技</a></li>
-                    <li width="92"><a href="">本地优选</a></li>
-                    <li width="92"><a href="">家电优选</a></li>
+                    <li class="w92"><a href="">电子竞技</a></li>
+                    <li class="w92"><a href="">本地优选</a></li>
+                    <li class="w92"><a href="">家电优选</a></li>
                 </ul>	
                 <div class="category-nav">
                     <i class="iconfont">&#xe62e;</i>
                     <span class="category-text">全部分类</span>
                 </div>
-             </div>
-         </div>       
-    </div>    
+                <div class="category-list">
+					<div class= "category-ch"> <i class="iconfont">&#xe637;</i><a href="">手机</a></div>
+					<div class= "category-ch"> <i class="iconfont">&#xe638;</i><a href="">电脑</a></div>
+					<div class= "category-ch"> <i class="iconfont">&#xe632;</i><a href="">DIY</a></div>
+					<div class= "category-ch"> <i class="iconfont">&#xe611;</i><a href="">数码</a></div>
+					<div class= "category-ch"> <i class="iconfont">&#xe644;</i><a href="">外设</a></div>
+                    <div class= "category-ch"> <i class="iconfont">&#xe66d;</i><a href="">智能</a></div>
+                </div>    
+            </div>
+        </div>       
+    </div> 
+    <div class="wraper">
+        <div class="wraper-top">
+            <a href="http://www.zol.com">首页</a>
+            >
+            <a href="http://www.zol.com/cell_phone/list/c34_s57.html">手机</a>
+            >
+            <span>荣耀</span>
+        </div>
+        <div class="wraper-body">
+            <div class="wraper-body-all">
+                <div class="wraper-body-img">
+  
+                    <div class="wraper-mark"></div>
+                </div>
+                <div class="wraper-bigimg">
+                    
+                </div>
+                <div class="wraper-focus">
+                    <ul>
+                      <li>
+                          <a href="" class="wf1"></a>
+                          <span class="spa1"></span>
+                        </li>
+                      <li>
+                          <a href="" class="wf2"> </a>
+                          <span class="spa1"></span>
+                        </li>
+                      <li>
+                          <a href="" class="wf3">     </a>
+                          <span class="spa1"></span>
+                        </li>
+                      <li>
+                          <a href="" class="wf4"></a>
+                          <span class="spa1"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wraper-body-else">
+                <h3 class = "else-title">
+                    <span class="else-sp ">
+                        送手机壳，钢化膜，指环支架！千元屏霸，屏占比91%全面屏！
+                    </span>
+                </h3>
+                <div class="else-body">
+                    <a class= "else-body-log" href="">|</a>
+                    <a class=" else-body-tim" href=""></a>
+                    <div class="else-body-right">
+                        <div class="else-right-body">
+                            距离结束剩
+                            <span></span>天
+                            <span class="tim-h"></span>:
+                            <span class="tim-m"></span>:
+                            <span class="tim-s"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class= "else-price">
+                    <dl  class="else-price-dl">
+                        <dt  class="else-price-dt"></dt>
+                        <dd class="else-price-dd">
+                            <span class="else-price-sp"></span>
+                        </dd>
+                       
+                    </dl>
+                </div>
+                <div class = "else-infor">
+                        <div class="else-num-dd"> 
+                                <div class="else-num-btn">
+                                    <div class="else-num-d"> 
+                                        <span class="else-ent">-</span>
+                                    <input class ="else-text"type="text" value="1">
+                                    <span class="else-add">+</span>
+                                    </div>                                   
+                                </div>
+                        </div>
+                    <div class="else-btn">
+                        <div class="qr-btn" href="">立即购买</div>
+                        <div class="car-btn" href="">加入购物车</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
+<script src = "../js/details.js"></script>
+<script src = "../js/jquery-1.11.1.min.js"></script>
+<script>
+    setInterval(function(){
+        function tim(now){
+            var d =now.getDate(),
+                h =toTwo(now.getHours()),
+                m =toTwo(now.getMinutes()),
+                s =toTwo(now.getSeconds())
+            $(".else-right-body span").html(d)
+            $(".tim-h").html(h)
+            $(".tim-m").html(m)
+            $(".tim-s").html(s)
+        }
+        function toTwo(val){
+            return val<10?"0"+val:val
+        }
+        var now = new Date()
+        tim(now); 
+    },1000)
+  
+</script>

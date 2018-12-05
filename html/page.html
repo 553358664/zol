@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        #shopbtn{
+            font-size: 30px;
+            padding: 5px 10px;
+            border: 1px solid red;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        p,button{
+            margin-left:80px;
+        }
+        img{
+            margin-left:40px ;
+        } 
+</body>
+</html>
+<script>
+    window.onload = function(){
+ 		var str = location.href;
+ 		var arr = str.split("?");
+ 		var pid = arr[1].split("=")[1];
+ 		$.ajax({
+ 			type:"get",
+ 			url:"data.json?id="+new Date().getTime(),
+ 			async:true,
+ 			success : function(arr){
+ 				var page = "";
+ 				for( var i = 0 ; i < arr.length ; i++ ){
+ 					var pro = arr[i];
+ 					if( pro.id == pid ){
+ 						//找到了要显示的商品信息
+ 						page = `<img src="img/${pro.src}" alt="" />
+								<p>${pro.name}</p>
+								<p>${pro.price}</p>
+								<button>购买</button>`;
+ 					}
+ 				}
+ 				$(".shopinfo").html( page );				
+ 			}
+ 		});
+ 		
+ 	}
+        /*
+        存储
+            
+            localStorage.属性 = 值
+        
+            localStorage.name = "何丽玲";
+        
+            localStorage.setItem("sex","女")
+        
+         */
+        
+        
+        
+        /*
+            取
+            console.log(localStorage.name)
+            console.log(localStorage["age"])
+            console.log(localStorage.getItem("sex"))
+         */	
+        
+        
+        
+        /*
+            删
+            localStorage.removeItem("name")
+        
+        
+            清除所有
+            localStorage.clear();
+        
+         */
+        
+        
+        // sessionStorage.setItem("sex","女")
+        
+        
+</script>

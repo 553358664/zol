@@ -142,9 +142,11 @@ header li{
 		.quick-entry{
 			width:307px;
 			height:36px;
-			padding-top:7px;
+			padding-top:12px;
 			margin-left:65px;
 			a{
+				display:block;
+				line-height:36px;
 				margin-left:20px;
 				float:right;
 				text-align:center;
@@ -169,7 +171,7 @@ header li{
 			width:536px;
 			height:32px;
 			border:2px solid #ec3639;
-			margin-top:7px;
+			margin-top:12px;
 			.search-text{
 			    display:inline-block;
 				width:441px;
@@ -191,7 +193,6 @@ header li{
 }
 .navMid{
 	height:39px;
-	background:#f5f5f5;
 	.navShow{
 		width:1200px;
 		height:39px;
@@ -223,6 +224,9 @@ header li{
 						text-decoration:underline;
 					}
 				}
+				.w92{
+					width:92px;
+				}
 			}
 			.category-nav{
 				position:relative;
@@ -241,7 +245,310 @@ header li{
 					line-height:39px;
 					color:white;
 				}			
+			}
+			.category-list{
+				width:160px;
+				height:400px;
+				position:absolute;
+				top:39px;
+				background:#4d4d4d;
+				display:none;
+				.category-ch{
+					padding-left:15px;
+					margin:0 10px;
+					width:135px;
+					height:54px;
+					background:#4d4d4d;
+					i{
+						margin-right:5px;
+						font-size:18px;
+						color:#fff;
+					}
+					a{	
+						height:54px;
+						line-height:54px;
+						font-size:16px;
+						color:#fff;
+
+					}
+					a:hover{
+						color:red;
+						text-decoration:underline;
+					}					
+				}
 			}		
 		}		
+	}
+}
+.wraper{
+	width:1200px;
+	margin:0 auto;
+	.wraper-top{
+		width:1208px;
+		height:32px;
+		margin-left:-8px;
+		font: 12px/32px SimSun;
+		color: #999;
+		a{
+			margin:0 8px;
+		}
+	}
+	.wraper-body{
+		border:1px solid #ededed;
+		overflow:hidden;
+		width:1000px;
+		float:left;
+		font: 12px/1.5 "Microsoft YaHei";
+		color: #333;
+		.wraper-body-all{
+			width:400px;
+			height:552px;
+			padding:10px 0 0 20px;
+			float:left;
+			position: relative;
+			.wraper-body-img{
+				position: relative;
+				width:400px;
+				height:400px;
+				margin-bottom:10px;
+				.wraper-a{
+					width:400px;
+					height:400px;
+					display:none;
+					position:absolute;
+					left:0;
+					top:0;
+				}
+				.wraper-a:first-child{
+					display:block;
+				}
+				.wraper-mark{
+					width:198.5px;
+					height:198.5px;
+					position: absolute;
+					left:0;
+					top:0;
+					background:rgba($color: #fff, $alpha: 0.2);
+					display:none;
+				}
+			}
+			.wraper-bigimg{
+				width:400px;
+				height:400px;
+				position: absolute;
+				top:10px;
+				left:415px;
+				border:1px solid #ddd;
+				overflow:hidden;
+				display:none;
+				z-index:100;
+				img{
+					position: absolute;;
+					left:0;
+					right:0;
+					display:none;
+				}
+				img:first-child{
+					display: block;
+				}
+			}
+			.wraper-focus{
+				width:400px;
+				height:70px;
+				ul{
+					width:415px;
+					height:70px;
+					padding-left:1px;
+					li{
+						float:left;
+						width:70px;
+						height:70px;
+						margin:0 12px 0 0;
+						position: relative;
+						a{
+							display: block;
+							width:70px;
+							height:70px;
+						}
+						span{
+							width:70px;
+							height:70px;
+							border:2px solid red;
+							display:none;
+							position:absolute;
+							left:0;
+							top:0;
+						}
+					}
+				}
+			}
+		}
+		.wraper-body-else{
+			width:530px;
+			padding:10px 20px 0 0;
+			height:881px;
+			float:right;
+			.else-title{
+				width:530px;
+				height:44px;
+				padding:7px 0 0 0 ;
+				margin:0 0 10px 0 ;
+				font: 16px/22px "Microsoft YaHei";
+				.else-sp{
+					font:14px;
+					color:#999;
+					display:block;
+				}
+			}
+			.else-body{
+				width:510px;
+				height:48px;
+				padding:0 10px;
+				background:#c00;
+				.else-body-log{
+					display:inline-block;
+					width:125px;
+					height:48px;
+					background:url(http://icon.zol-img.com.cn/newshop/shop/detail/tuan/mall.png) no-repeat;
+					background-position: left center;
+					margin-left:-30px;
+					float:left;
+					text-align:right;
+					font-size: 18px;
+					vertical-align: middle;
+					line-height:48px;
+					color:white;
+				}
+				.else-body-tim{
+					margin:0 0 0 4px;
+					display:inline-block;
+					width:44px;
+					height:48px;
+					float:left;
+					background:url(http://icon.zol-img.com.cn/newshop/shop/detail/tuan/group.png) no-repeat;
+					background-position: left center;
+				}
+				.else-body-right{
+					width:189px;
+					height:48px;
+					float:right;
+					.else-right-body{
+						height:189px;
+						height:24px;
+						margin:12px 0 0 0; 
+						font-size: 14px;
+						color: #fff;
+						line-height:24px;
+						span{
+							text-align:center;
+						}
+						.tim-h{
+							display:inline-block;
+							width:20px;
+							height:24px;
+							background:white;
+							color:#c00;
+						}
+						.tim-m{
+							display:inline-block;
+							width:20px;
+							height:24px;
+							background:white;
+							color:#c00;
+						}
+						.tim-s{
+							display:inline-block;
+							width:20px;
+							height:24px;
+							background:white;
+							color:#c00;
+						}
+					}
+				}
+			}
+			.else-price{
+				width:510px;
+				height:30px;
+				padding:5px 10px;
+				background:#f7f7f7;
+				.else-price-dl{
+					width:430px;
+					height:30px;
+					padding:0 0 0 75px;
+					position: relative;
+					.else-price-dt{
+						width:65px;
+						height:30px;
+						position: absolute;
+						top:0;
+						left:0;
+					}
+					
+				}
+			}
+			.else-infor{
+				width:530px;
+				height:635px;
+				padding:10px 0 20px 0;
+				.else-num-dd{
+					width:530px;
+					height:32px;
+					.else-num-btn{
+						width:455px;
+						height:32px;
+						padding:0 0 0 75px;
+						.else-num-d{
+							width:102px;
+							height:28px;
+							margin:0 10px 0 0;
+							border:1px solid #ccc;
+							span{
+								width:28px;
+								height:28px;
+								display:block;
+								float:left;
+								line-height:28px;
+								text-align:center;
+							}
+							.else-text{
+								width:44px;
+								height:28px;
+								border:1px solid #ccc;
+								border-top:none;
+								border-bottom:none;
+								float:left;
+								text-align:center;
+							}
+						}
+					}
+				}
+				.else-btn{
+					width:465px;
+					height:50px;
+					padding:30px 0 0 65px;
+					div{
+						float:left;
+						text-align:center;
+					}
+					.qr-btn{
+						width:140px;
+						height:50px;
+						margin:0 10px 0 0;
+						color: #fff;
+						background: #c00;
+						font: 18px/50px "Microsoft YaHei";
+					}
+					.car-btn{
+						width:138px;
+						height:48px;
+						border: 1px solid #ffd9d9;
+   						background-color: #ffeded;
+   						color: #c00;
+						line-height: 48px;
+						font: 18px/50px "Microsoft YaHei";
+					}
+				}
+			}
+		}
 	}
 }

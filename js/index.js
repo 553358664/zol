@@ -97,7 +97,7 @@ function ware(){
 			var pro = arr[i];
 				this.conStr += `<li class= "ware-items">
 							<div class = "ware-img">
-								<a href="page.html?pid=${pro.id}">
+								<a href="html/details.html?pid=${pro.id}">
 									<img src="img/${pro.src}">
 								</a>
 								<div class = "ware-word">
@@ -139,7 +139,7 @@ function wareRight(){
 		for( var i = (index-1)*pageNum ; i < index*pageNum ; i++ ){
 			var pro = arr[i];
 				this.conStr += `<li class = "ware-right-items">
-							<a href="page.html?pid=${pro.id}" class= "ware-pic">
+							<a href="html/page.html?pid=${pro.id}" class= "ware-pic">
 								<img src="img/${pro.src}" alt="">
 							</a>
 							<div class= "ware-right-body">
@@ -176,7 +176,7 @@ function section(){
 		for( var i = (index-1)*pageNum ; i < index*pageNum ; i++ ){
 			var pro = arr[i];
 				this.conStr += `<li class= "section-body-list">
-						<a href="page.html?pid=${pro.id}" class="section-body-pic"><img src="img/${pro.src}"></a>
+						<a href="html/page.html?pid=${pro.id}" class="section-body-pic"><img src="img/${pro.src}"></a>
 						<p class="section-body-name"><a href="">${ pro.uname }</a></p>
 						<p class="section-body-show">首发当天部分机型现货</p>
 						<div class="sct-d-prs">
@@ -262,7 +262,7 @@ function sectionfour(){
 		for( var i = (index-1)*pageNum ; i < index*pageNum ; i++ ){
 			var pro = arr[i];
 				this.conStr += `<li>
-							<a href="page.html?pid=${pro.id}"><img src="${pro.src}" alt=""></a>
+							<a href="html/page.html?pid=${pro.id}"><img src="${pro.src}" alt=""></a>
 							<p class= "s4-items"><a href="">${pro.uname}</a></p>
 							<p class= "s4-items">RMB<span>${pro.price}</span></p>
 							</li>`
