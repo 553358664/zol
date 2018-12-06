@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class = "headerShow">
+            <ul class = "headerLeft left">
+                <li><a href="../index.html">商城首页</a></li>
+                <li>Hi~黄欢迎来到Z商城，请<a href="">登录</a></li>
+                <li> <a href="">注册</a></li>
+            </ul>
+            <ul class = "headerMid left">
+                <li><a href="">我的订单</a></li>
+                <li><a href="">买家中心<i class="iconfont">&#xe695;</i></a></li>
+                <li><a href="">购物车0件</a></li>
+                <li><a href="">帮助中心</a></li>
+            </ul>
+            <ul class = "headerRig right">
+                <li class= "phone-shopping"><a href=""><img src="../img/h1.jpg">手机商城<i class="iconfont">&#xe695;</i></a></li>
+                <li><a href="">中关村在线</a></li>
+                <li><a href="">招商合作</a></li>
+                <li><a href="">联系客服<i class="iconfont">&#xe695;</i></a></li>
+            </ul>
+            <div class= "header-qrcord">
+                <img src="../img/qr1.png">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="shoplist">
+            <!--
+                '<div class="shop-item clearfix">'+
+                    '<p class="fl"><input type="checkbox" class="ck"/></p>'+
+                    '<img class="fl" src="img/'+ shopinfo.src +'" alt="" />'+
+                    '<p class="fl">'+ shopinfo.name +'</p>'+
+                    '<span class="fl">'+ shopinfo.price +'元</span>'+
+                    '<p class="fl count" '+
+                        'data-id="'+ shopinfo.id +'" '+
+                        'data-price="'+ shopinfo.price +'" data-count="'+ shopinfo.count +'"'+
+                        'data-name="'+ shopinfo.name +'" data-src="'+ shopinfo.src +'"'+
+                        '>'+
+                        '<span class="updateCount" data-number="1">+</span>'+
+                        '<span class="shop-count">'+ shopinfo.count +'</span>'+
+                        '<span class="updateCount" data-number="-1">-</span>'+
+                    '</p>'+
+                    '<em class="fl sumPrice">'+ (shopinfo.count * shopinfo.price) +'元</em>'+
+                    '<i class="fl delBtn">删除</i>'+
+                '</div>';
+            -->
+        </div>
+        <div id="sum" class="clearfix">
+            共多少<span class="count2"></span>件商品，合计<span class="money2"></span>元
+            <label class="fl">
+                <input id="selectAll" type="checkbox"/>全选
+            </label>
+        </div>
+    </section>
+</body>
+</html>
+<script src ="../js/shopcar.js"></script>
+<script src ="../js/getData.js"></script>
+<script src = "../js/jquery-1.11.1.min.js"></script>
+<script>
+    aa();
+</script>

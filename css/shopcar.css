@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+img {
+  vertical-align: middle;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+
+header {
+  height: 29;
+  background: #f5f5f5;
+  border-top: 1px solid #ccc;
+}
+header .headerShow {
+  width: 1200px;
+  height: 29px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  position: relative;
+}
+header .headerShow .header-qrcord {
+  position: absolute;
+  top: 29px;
+  left: 855px;
+  display: none;
+}
+header .headerShow .headerLeft li {
+  margin-right: 22px;
+}
+header .headerShow .headerMid {
+  margin-left: 153px;
+}
+header .headerShow .headerMid li {
+  margin-right: 20px;
+}
+header .headerShow .headerRig img {
+  vertical-align: middle;
+}
+header .headerShow .headerRig li {
+  margin-left: 20px;
+}
+header .headerShow i {
+  font-size: 10px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+header li {
+  font-size: 12px;
+  float: left;
+  line-height: 29px;
+}
+
+.shoplist {
+  width: 1050px;
+}
+
+.shop-item {
+  width: 100%;
+  /*border: 1px solid #d1d1d1;*/
+  margin: 20px auto;
+  text-align: center;
+}
+
+.fl {
+  float: left;
+}
+
+.shop-item input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+.shop-item .fl {
+  padding: 10px;
+  width: 129px;
+  display: block;
+  font-style: normal;
+  height: 150px;
+  border: 1px solid #d1d1d1;
+  margin-left: -1px;
+}
+.shop-item .fl:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.shop-item .count span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  line-height: 30px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#sum {
+  position: fixed;
+  bottom: 0;
+  width: 1050px;
+  margin: 10px auto 50px;
+  text-align: right;
+  background: pink;
+}
+
+/*# sourceMappingURL=shopcar.css.map */

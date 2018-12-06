@@ -20,30 +20,16 @@ function add(){
     this.body = $(".else-text")
     this.init =function(){
         this.body.val(this.body.val()*1+1)
+
     }
     this.ent =function(){
-        this.body.val(parseInt(this.body.val()-1))
+        this.body.val(this.body.val()*1-1)
         if(parseInt(this.body.val())<1){
             this.body.val("1")
         }
     }
     return this
 }
-// function btn(){
-//     this.body = $(".car-btn")
-//     this.init()
-// }
-// btn.prototype = {
-//     init :function(){
-//         this.Toggleclass()
-//     },
-//     Toggleclass :function(){
-//         this.body.on("click",index,$.proxy(this.handleToggleClass,this))
-//     },
-//     handleToggleClass :function(){
-//         localStorage.name = ""
-//     }
-// }
 
 function adc(){
     var str = location.href;
@@ -110,22 +96,43 @@ function adc(){
             $(".car-btn").bind("click",function(){
                 var flag = true,
                     brr=[],
+                    num = $(".else-text").val(),
                     json = {
                         "id": arr[a].id,
                         "name":arr[a].uname,
                         "src":arr[a].img1,
-                        "price":arr[a].pric,
-                        "count":1
-                    }
-                    json = JSON.stringify(json);
-                 localStorage.setItem("key", json)
+                        "price":(arr[a].price).split("￥").join(""),
+                        "count":num
+                    },
+                    crr = getLocalstorage("key") ;    
+       
+                if( crr ){ 
+                    brr = crr;                     
+                    for( var i = 0 ; i < brr.length ; i++ ){
+                        if( json.id == brr[i].id ){
+                            brr[i].count = parseInt(num)+parseInt(brr[i].count);
+                            flag = false;
+                            break;
+                        }
+                    }                                        
+                }
+                if(flag){
+                    brr.push( json ) ;                          
+                }                                                                      
+                localStorage.setItem("key", JSON.stringify(brr))             
             })
         }
     });
 }
-
-
-
+// function getLocalstorage(key){
+// 	//如果cookie中有数据  才可以获取数据
+// 	if(localStorage.getItem("key")){	
+//         var cookieInfo = localStorage.getItem("key");
+//         return JSON.parse(cookieInfo);//如果找到 我们想要的键，将值转成数组返回        
+// 	}
+// 	//如果cookie中没有数据，直接返回一个空数组
+// 	return [];
+// }
 function list() {
     if(!list.int){
         list.int={
